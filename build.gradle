@@ -67,9 +67,9 @@ modifyPom {
         inceptionYear '2015'
 
         scm {
-            url 'https://github.com/JakeWharton/sdk-manager-plugin'
-            connection 'scm:git:git://github.com/JakeWharton/sdk-manager-plugin.git'
-            developerConnection 'scm:git:ssh://git@github.com/JakeWharton/sdk-manager-plugin.git'
+            url 'https://github.com/mitchwongho/appversion-plugin'
+            connection 'scm:git:git://github.com/mitchwongho/appversion-plugin.git'
+            developerConnection 'scm:git:ssh://git@github.com/mitchwongho/appversion-plugin.git'
         }
 
         licenses {
