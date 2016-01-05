@@ -64,7 +64,7 @@ modifyPom {
         name 'App Version Manager'
         description 'Gradle plugin that assigns an Android app version code and name by git tags.'
         url 'https://github.com/mitchwongho/sdk-manager-plugin'
-        inceptionYear '2015'
+        inceptionYear '2016'
 
         scm {
             url 'https://github.com/mitchwongho/appversion-plugin'
