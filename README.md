@@ -9,14 +9,14 @@ Usage
 Apply the plugin in your `build.gradle`:
 
 ```gradle
-apply plugin: 'za.co.mitchwongho.appversion'
+apply plugin: 'com.github.mitchwongho.appversion'
 
 buildscript {
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath 'za.co.mitchwongho.gradle:appversion-plugin:1.0.0'
+        classpath 'com.github.mitchwongho.gradle:appversion-plugin:1.0.0'
     }
 }
 
