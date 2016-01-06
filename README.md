@@ -16,7 +16,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.github.mitchwongho.gradle:appversion-plugin:1.0.0'
+        classpath 'com.github.mitchwongho.gradle:appversion-plugin:0.1.0'
     }
 }
 
