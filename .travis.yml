@@ -1,0 +1,10 @@
+language: java
+
+env:
+  global:
+    - TERM=dumb
+
+notifications:
+  email: false
+
+sudo: false
