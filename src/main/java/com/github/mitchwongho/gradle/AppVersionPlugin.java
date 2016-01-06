@@ -1,4 +1,4 @@
-package za.co.mitchwongho.gradle;
+package com.github.mitchwongho.gradle;
 
 import com.android.build.gradle.AppPlugin;
 import com.android.build.gradle.LibraryPlugin;

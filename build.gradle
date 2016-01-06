@@ -7,8 +7,8 @@
  * user guide available at http://gradle.org/docs/2.3/userguide/tutorial_java_projects.html
  */
 
-group = 'za.co.mitchwongho.gradle'
-version = '1.0.0-SNAPSHOT'
+group = 'com.github.mitchwongho.gradle'
+version = '0.1.0'
 
 buildscript {
     repositories {

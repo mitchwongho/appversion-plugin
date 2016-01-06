@@ -1,4 +1,4 @@
-package za.co.mitchwongho.gradle;
+package com.github.mitchwongho.gradle;
 
 /**
  *
