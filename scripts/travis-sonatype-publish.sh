@@ -8,7 +8,7 @@ echo -e "(sonatype_publish=$SONATYPE_PUBLISH)"
 if [ "$SONATYPE_PUBLISH" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "$SONATYPE_PUBLISH_BRANCH" ]; then
   echo -e "Starting publish to Sonatype...\n"
 
-  ./gradlew uploadArchives -PNEXUS_USERNAME="${SONATYPE_USERNAME}" -PNEXUS_PASSWORD="${SONATYPE_PASSWORD}"
+  ./gradlew uploadArchives -PnexusUsername="${SONATYPE_USERNAME}" -PnexusPassword="${SONATYPE_PASSWORD}"
   RETVAL=$?
 
   if [ $RETVAL -eq 0 ]; then
