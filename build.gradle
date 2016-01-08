@@ -49,13 +49,13 @@ dependencies {
 
 install {
     repositories.mavenInstaller {
-        pom.artifactId = 'gradle-plugin'
+        pom.artifactId = 'appversion-plugin'
     }
 }
 
 uploadArchives {
     repositories.mavenDeployer {
-        pom.artifactId = 'gradle-plugin'
+        pom.artifactId = 'appversion-plugin'
     }
 }
 
@@ -63,7 +63,7 @@ modifyPom {
     project {
         name 'App Version Manager'
         description 'Gradle plugin that assigns an Android app version code and name by git tags.'
-        url 'https://github.com/mitchwongho/sdk-manager-plugin'
+        url 'https://github.com/mitchwongho/appversion-plugin'
         inceptionYear '2016'
 
         scm {
