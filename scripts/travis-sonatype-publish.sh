@@ -3,6 +3,8 @@
 # Based closely on material from
 # http://benlimmer.com/2014/01/04/automatically-publish-to-sonatype-with-gradle-and-travis-ci.
 
+echo -e "(sonatype_publish=$SONATYPE_PUBLISH)"
+
 if [ "$SONATYPE_PUBLISH" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "$SONATYPE_PUBLISH_BRANCH" ]; then
   echo -e "Starting publish to Sonatype...\n"
 
