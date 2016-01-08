@@ -1,12 +1,16 @@
 language: java
+
 jdk:
 - openjdk7
+
 env:
   global:
   - TERM=dumb
-  secure: FlIIRVZQrLLNq5c6QITopLhfreIOLwRNJcXFQD4lLEzhEwlYprOTgVh2U9UmPQrE9gNyeV1GVgAKCwjC/ptUEafdWZRUqQtD3Uz/F/180w4ve5uhEztqgD5geM5m4u9vqQUSV+j6gmpX10deAzLsjkmNYkiKU4DlZQU7uspVjbK/+UoiWiaojCa4XdMBSQiI1YiH45AJxiGLP4jrVM0BwffDqQm4JAJnd3fgB6tLWviBPRxKq5TGedk2/OEYwAqQT+jel3t4bH/7M8sZj5rQrdQihDig9hYAeSeY1tSvDXxjoKrUbdrGExsS7io5oesjxIoCK0ryLZWyg4ZzODjPdDijdtuE5/AuLlhxmIl6rCuC+uMYizQco6gw35aa78V8l+0qDmE06zShdo1OVxSgchHvsZBcypIFv1yfoUKKROoGHlRcKaSYqTManzuuliBvgMxVBQAphiitZ7LW4kODHwK8NGh3SPmjl9VVncXl8zd9feJpmjqClDE4wNC41vwk2Nr5/h83akjYEhy5vxM1fBxMRIVdOD+8KAUX3mYWlJUHWnznwOOdcvVgDTzNlsw20Uehu08AQQR52uic1Rv7zCyW/5xsn+nkhDmrYzdo9n2Sjb5GM1TLdUheHPcngCwMVWg/xGG9tSFVyS5K1FhSG3nT+JkaKjMqYI1kAs1vk4A=
+
 notifications:
   email: false
+
 sudo: false
+
 after_success:
 - scripts/travis-sonatype-publish.sh
