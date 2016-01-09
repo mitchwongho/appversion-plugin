@@ -50,12 +50,16 @@ dependencies {
 install {
     repositories.mavenInstaller {
         pom.artifactId = 'appversion-plugin'
+        repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/")
+        snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/")
     }
 }
 
 uploadArchives {
     repositories.mavenDeployer {
         pom.artifactId = 'appversion-plugin'
+        repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/")
+        snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/")
     }
 }
 
@@ -93,9 +97,4 @@ modifyPom {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.10'
     distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
-}
-
-nexus {
-    repositoryUrl = 'https://oss.sonatype.org/service/local/staging/deploy/maven2'
-    snapshotRepositoryUrl = 'https://oss.sonatype.org/content/repositories/snapshots'
 }
