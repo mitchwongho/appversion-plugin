@@ -58,8 +58,6 @@ install {
 uploadArchives {
     repositories.mavenDeployer {
         pom.artifactId = 'appversion-plugin'
-        repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/")
-        snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/")
     }
 }
 
