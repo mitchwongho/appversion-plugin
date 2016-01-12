@@ -47,19 +47,19 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-install {
-    repositories.mavenInstaller {
-        pom.artifactId = 'appversion-plugin'
-    }
-}
-
-uploadArchives {
-    repositories.mavenDeployer {
-        pom.artifactId = 'appversion-plugin'
-        repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/")
-        snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/")
-    }
-}
+//install {
+//    repositories.mavenInstaller {
+//        pom.artifactId = 'appversion-plugin'
+//    }
+//}
+//
+//uploadArchives {
+//    repositories.mavenDeployer {
+//        pom.artifactId = 'appversion-plugin'
+//        repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/")
+//        snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/")
+//    }
+//}
 
 modifyPom {
     project {
@@ -95,4 +95,13 @@ modifyPom {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.10'
     distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
+}
+
+nexus {
+    attachJavadoc = false
+    attachSources = true
+    attachTests = false
+    sign = false
+    repositoryUrl = 'https://oss.sonatype.org/service/local/staging/deploy/maven2'
+    snapshotRepositoryUrl = 'https://oss.sonatype.org/content/repositories/snapshots'
 }
