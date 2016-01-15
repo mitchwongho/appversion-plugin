@@ -47,20 +47,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-//install {
-//    repositories.mavenInstaller {
-//        pom.artifactId = 'appversion-plugin'
-//    }
-//}
-//
-//uploadArchives {
-//    repositories.mavenDeployer {
-//        pom.artifactId = 'appversion-plugin'
-//        repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/")
-//        snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/")
-//    }
-//}
-
 modifyPom {
     project {
         name 'App Version Manager'
@@ -98,7 +84,7 @@ task wrapper(type: Wrapper) {
 }
 
 nexus {
-    attachJavadoc = false
+    attachJavadoc = true
     attachSources = true
     attachTests = false
     sign = false

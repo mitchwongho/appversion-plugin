@@ -1,7 +1,9 @@
 # Android AppVersion Plugin
 
+[![Build Status](https://travis-ci.org/mitchwongho/appversion-plugin.svg?branch=master)](https://travis-ci.org/mitchwongho/appversion-plugin)
+
 The `appversion-plugin` is a gradle plugin that automates the task of applying the `versionCode` and `versionName` to
-your Android app by using the Git _tags_ you create.
+your Android app by using the Git _tag annotation labels_ you create.
 
 Usage
 -----
