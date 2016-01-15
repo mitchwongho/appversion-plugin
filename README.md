@@ -31,6 +31,11 @@ android {
     }
 ```
 
+where:
+
+`project.appversion.code` is set to the number of tags and `project.appversion.name` is set to the _annotation label_ 
+specified in the `$git tag -a <annotation label>` command. 
+
 License
 --------
 
